@@ -25,6 +25,7 @@ include_directories( ${CMAKE_CURRENT_SOURCE_DIR}/Backend)
 
 # Dependencies
 add_subdirectory(QtQuickStream)
+add_subdirectory(RoniaComponents)
 
 # Extra QML File properties
 set_source_files_properties(
@@ -134,6 +135,7 @@ set_target_properties(appQTemplateProject PROPERTIES
 target_link_libraries(appQTemplateProject
     PRIVATE Qt6::Quick Qt6::QuickControls2
     QtQuickStreamplugin
+    RoniaComponentsplugin
 )
 
 include(GNUInstallDirs)
